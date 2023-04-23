@@ -6,22 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="612dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302"
-        tools:layout_editor_absoluteX="0dp"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/button_start"
-        android:layout_width="256dp"
-        android:layout_height="wrap_content"
-        android:text="Play"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="667dp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="612dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.302"
+            tools:layout_editor_absoluteX="0dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="667dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
