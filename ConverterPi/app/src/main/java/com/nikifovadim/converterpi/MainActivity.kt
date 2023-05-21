@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.graphics.Color
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,9 +23,10 @@ class MainActivity : AppCompatActivity() {
             {
                 var reversedInput = userText.reversed()
                 output.text = reversedInput
+                output.setTextColor(Color.parseColor("#00FF00"))
             } else {
                 output.text = "Incorrect number PI"
-                output.setTextColor(getResources().getColor(com.google.android.material.R.color.design_error))
+                output.setTextColor(Color.parseColor("#FF0000"))
             }
         }
     }
